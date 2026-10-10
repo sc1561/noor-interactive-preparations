@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "استديو نور التفاعلي",
+  "version": "1.0.0",
+  "description": "محرر مستقل للتحاضير التفاعلية مع حفظ الإصدارات والمعاينة والتصدير.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "interactive-preparations@noor.studio",
+      "strict_min_version": "109.0"
+    }
+  },
+  "permissions": [
+    "storage"
+  ],
+  "browser_action": {
+    "default_title": "فتح استديو نور التفاعلي"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_security_policy": "script-src 'self'; object-src 'none'"
+}
